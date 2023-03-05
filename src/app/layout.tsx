@@ -1,8 +1,8 @@
+require("@solana/wallet-adapter-react-ui/styles.css");
 import "./globals.css";
 import { Inter } from "next/font/google";
-import clsx from "clsx";
-import Link from "next/link";
 import NavBar from "@/components/NavBar";
+import SolanaProvider from "@/components/SolanaProvider";
 const inter = Inter({ subsets: ["latin", "vietnamese"] });
 export const metadata = {
   title: "Solana DApp Template",
@@ -16,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <NavBar />
-        <main>{children}</main>
+      <body className={inter.className}>
+        <SolanaProvider>
+          <NavBar />
+          <main className="py-3">{children}</main>
+        </SolanaProvider>
       </body>
     </html>
   );
