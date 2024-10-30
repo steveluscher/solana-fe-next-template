@@ -14,11 +14,11 @@ npx tailwindcss init -p
 ### Install solana packages
 
 ```bash
-pnpm i @solana/web3.js @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-wallets
+pnpm i @solana/web3.js@1 @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-wallets
 ```
 
 or
 
 ```bash
-yarn add @solana/web3.js @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-phantom
+yarn add @solana/web3.js@1 @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-phantom
 ```
